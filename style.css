@@ -82,6 +82,73 @@ a {
 	font-weight: 400;
 }
 
+/*Skills */
+.skills_list12 {
+    margin-top: 1rem;
+	margin-right: 15rem;
+    line-height: 1;
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills_list12 li {
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 6px;
+    transition: background-color 0.3s;
+}
+
+.skills_list12 li:hover {
+    background-color: #e0e0e0;
+}
+
+.additional-skill {
+    display: none;
+}
+
+.show .additional-skill {
+    display: list-item;
+}
+.skills_list12 .additional-skill {
+	display: none;
+  }
+  
+
+#toggle-btn {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+	margin-left: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+	font-size: 400;
+}
+
+#toggle-btn:hover {
+    background-color: #e04f00;
+}
+
+#toggle-btn:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .skills_list {
+        margin-left: 1rem;
+    }
+
+    #toggle-btn {
+        width: auto;
+    }
+}
+
 /* layouts */
 .container {
 	max-width: 1000px;
@@ -172,11 +239,32 @@ a {
 }
 
 .profile_title {
-	font-size: 1.5rem;
+	font-size: 3rem;
 	font-weight: 400;
 	text-transform: uppercase;
 }
 
+.item_preTitle {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px; /* Adjust as needed */
+  }
+  
+  .view-button {
+	background-color: #F97713; /* Example color, change as needed */
+	color: white;
+	padding: 5px 10px;
+	text-decoration: none;
+	border-radius: 3px;
+	font-weight: 400;
+  }
+  
+  .view-button:hover {
+	background-color: #e04f00; /* Darker shade on hover */
+	text-decoration: none;
+  }
+  
 /* General button styling */
 .downloadBtn {
 	display: inline-block;
@@ -233,8 +321,12 @@ a {
 }
 
 /* awards */
-.awards_item {
-	margin-top: 2rem;
+.awards {
+	margin-top: 4rem;
+}
+
+.interest{
+	margin-top: 4rem;
 }
 
 /* Interests */
@@ -276,7 +368,15 @@ a {
 	gap: 0.5rem;
 	color: white;
 }
-
+.contact{
+	margin-top: -80px;
+}
+.email{
+	font-size: 1.5rem;
+}
+.social{
+	margin-top: -80px;
+}
 .interest_item1 img {
 	width: 50px;
 	height: auto;
@@ -291,7 +391,7 @@ a {
   }
   
   .social_item {
-	font-size: 1.5rem;
+	font-size: 2rem;
 	display: flex;
 	align-items: center; 
 	gap: 0.5rem;
@@ -338,9 +438,8 @@ hr {
 hr {
 	grid-column: 1/-1;
 	width: 80%;
-	margin: 0 auto;
-	margin-top: 5rem;
-	margin-bottom: 1rem;
+	margin-top: -70px;
+	margin-bottom: -800px;
 	border: none;
 	border-top: 2px solid rgba(128, 128, 128, 0.229);
 }
