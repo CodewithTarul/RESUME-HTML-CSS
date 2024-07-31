@@ -21,6 +21,7 @@ body {
 	color: white;
 }
 
+
 /* Horizontal line style */
 hr {
 	border: none;
@@ -148,6 +149,25 @@ a {
         width: auto;
     }
 }
+
+.loader-container {
+	position: fixed; /* Ensures it's always centered in the viewport */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center; /* Centers horizontally */
+	align-items: center; /* Centers vertically */
+	background-color: #000000; /* Optional: semi-transparent background */
+	z-index: 9999; /* Ensures the loader is on top of other content */
+  }
+  
+  .loader-container img {
+	width: auto; /* Adjust size as needed */
+	height: auto; /* Maintains aspect ratio */
+  }
+  
 
 /* layouts */
 .container {
