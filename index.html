@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="description" content=" Tarul Sunil Barve's resume - Computer Science and Engineering graduate with expertise in Full Stack Development, Java, Python, and project management.">
-    <meta name="keywords" content="Tarul Sunil Barve, Computer Science, Engineering, Full Stack Developer, Java, Python, Resume, Portfolio">
-    <meta name="author" content="Tarul Sunil Barve">
     <link id="favicon" rel="shortcut icon" href="view-3d-man-holding-laptop_23-2150709818.avif" type="image/x-png">
     <title>Resume | Tarul Barve</title>
     <link rel="stylesheet" href="style.css">
@@ -14,6 +11,10 @@
     <script src="https://unpkg.com/feather-icons"></script> 
   </head>
   <body>
+        <!-- Pre-Loader -->
+        <div class="loader-container">
+          <img draggable="false" src="preloader.gif" alt="Preloader">
+      </div>
     <div class="container">
       <div class="profile">
         <div class="profile_container">
@@ -23,7 +24,7 @@
               <span class="profile_name_firstName">Tarul</span>
               <span class="profile_name_lastName">Barve</span>
             </h1>
-            <p class="profile_title">Full Stack Developer</p>
+            <p class="profile_title">Junior Software Developer</p>
             <p class="description profile_description">
               Driven CSE student passionate about innovative software development.
               Intermediate in programming, I'm ready to excel and contribute by seeking
@@ -209,6 +210,16 @@
         });
       });
     </script>
+    <script>
+      window.onload = function() {
+        setTimeout(function() {
+          const loader = document.querySelector('.loader-container');
+          loader.style.display = 'none';
+        }, 1000); // 
+      };
+    </script>
+    
+    
     
   </body>
   </html>
